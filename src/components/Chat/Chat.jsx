@@ -32,7 +32,7 @@ const Chat = () => {
       setMembersArray([...members]);
     });
 
-    room.on("member_join", function (member) {
+    room.on("member_join", (member) => {
       setMembersArray(function (current) {
         return [...current, member];
       });
@@ -52,7 +52,7 @@ const Chat = () => {
       });
     });
 
-    room.on("member_leave", function (member) {
+    room.on("member_leave", (member) => {
       setMembersArray((current) => {
         return current.filter((oneMember) => oneMember.id !== member.id);
       });
