@@ -74,7 +74,6 @@ const Chat = () => {
     room.on("message", (message) => {
       setMessageArray((current) => {
         const currentTime = new Date();
-
         const time = currentTime.toLocaleTimeString("en-US", {
           hour: "2-digit",
           minute: "2-digit",
@@ -117,8 +116,8 @@ const Chat = () => {
       >
         <Header />
         <div className="sidebar-messages">
-        <Sidebar />
-        <Messages />
+          <Sidebar />
+          <Messages />
         </div>
         <Input />
       </ChatContext.Provider>
