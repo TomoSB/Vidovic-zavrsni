@@ -1,0 +1,43 @@
+.messages_area {
+  overflow-y: scroll;
+  height: 750px;
+  width: 100%;
+  padding: 5px 20px;
+
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+    width: 100%;
+
+    li {
+      width: fit-content;
+      padding: 0.8rem;
+      margin: 10px 0;
+      display: flex;
+      flex-direction: column;
+      font-size: 1.1em;
+      border-radius: 20px;
+
+      span.chat_buble-username {
+        width: fit-content;
+        margin-left: auto;
+        font-size: 0.8em;
+      }
+
+      &.message_by_me {
+        margin-left: auto;
+        background: green;
+      }
+
+      &.message_by_other {
+        background: rgb(103, 94, 104);
+      }
+
+      &.member_joined_left {
+        margin: 20px auto;
+        background: rgb(46, 13, 83);
+        padding: 0.2rem 0.5rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.sidebar {
+  width: 100%;
+  max-width: 250px;
+  background: rgb(36, 33, 39);
+  border-radius: 10px;
+
+  .users_container {
+    .users_list_title {
+      font-size: 26px;
+      text-align: center;
+    }
+
+    ul {
+      margin-top: 3rem;
+      list-style-type: none;
+      padding-left: 0;
+
+      li {
+        text-align: center;
+        margin-bottom: 0.85rem;
+        font-size: 1.2em;
+      }
+    }
+  }
+}

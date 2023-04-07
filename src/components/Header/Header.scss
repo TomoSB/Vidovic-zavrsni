@@ -1,0 +1,14 @@
+header {
+  padding: 2rem 1rem;
+  background: rgb(26, 23, 28);
+  border-radius: 10px;
+
+  .personal_user_container {
+    text-align: center;
+
+    span {
+      font-size: 26px;
+      font-weight: 600;
+    }
+  }
+}
